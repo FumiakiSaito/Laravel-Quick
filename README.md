@@ -3,6 +3,11 @@
 ## Description
 Laravelの新規環境構築用
 
+* Nginx
+* PHP7.4-fpm
+* MySQL5.7
+* phpMyAdmin
+
 
 ## Quickstart
 
@@ -11,8 +16,8 @@ $ docker-compose up
 ```
 
 ```
-$ docker exec -it php /bin/bash -c 'composer global require "laravel/installer"'
-$ docker exec -it php /bin/bash -c 'cd /var/www/html && composer create-project laravel/laravel {アプリ名} --prefer-dist'
+$ docker exec -it php_laravel_quick /bin/bash -c 'composer global require "laravel/installer"'
+$ docker exec -it php_laravel_quick /bin/bash -c 'cd /var/www/html && composer create-project laravel/laravel {アプリ名} --prefer-dist'
 ```
 
 |  Service  |  URL  |
